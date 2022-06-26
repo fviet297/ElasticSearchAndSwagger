@@ -1,0 +1,4 @@
+{
+  "type":"keyword",
+  "normalizer":"keyword_lowercase"
+}

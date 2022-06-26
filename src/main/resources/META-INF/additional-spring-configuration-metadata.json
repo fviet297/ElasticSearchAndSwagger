@@ -1,0 +1,17 @@
+{"properties": [
+  {
+    "name": "elasticsearch.clustername",
+    "type": "java.lang.String",
+    "description": "A description for 'elasticsearch.clustername'"
+  },
+  {
+    "name": "elasticsearch.host",
+    "type": "java.lang.String",
+    "description": "A description for 'elasticsearch.host'"
+  },
+  {
+    "name": "elasticsearch.port",
+    "type": "java.lang.String",
+    "description": "A description for 'elasticsearch.port'"
+  }
+]}

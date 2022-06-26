@@ -1,0 +1,173 @@
+{
+  "settings":{
+    "index":{
+      "number_of_shards":9,
+      "analysis":{
+        "normalizer":{
+          "keyword_lowercase":{
+            "type":"custom",
+            "filter":[
+              "lowercase"
+            ]
+          }
+        },
+        "analyzer":{
+          "mainfield":{
+            "type":"custom",
+            "tokenizer":"standard",
+            "filter":[
+              "lowercase",
+              "vn_stop"
+            ]
+          },
+          "trigram":{
+            "type":"custom",
+            "tokenizer":"standard",
+            "filter":[
+              "lowercase",
+              "shingle",
+              "vn_stop"
+            ]
+          },
+          "trigramascii":{
+            "type":"custom",
+            "tokenizer":"standard",
+            "filter":[
+              "lowercase",
+              "shingle",
+              "vn_stop",
+              "asciifolding"
+            ]
+          },
+          "trigram2":{
+            "type":"custom",
+            "tokenizer":"standard",
+            "filter":[
+              "lowercase",
+              "shingle2",
+              "vn_stop"
+            ]
+          },
+          "trigramascii2":{
+            "type":"custom",
+            "tokenizer":"standard",
+            "filter":[
+              "lowercase",
+              "shingle2",
+              "vn_stop",
+              "asciifolding"
+            ]
+          },
+          "trigram3":{
+            "type":"custom",
+            "tokenizer":"standard",
+            "filter":[
+              "lowercase",
+              "shingle3",
+              "vn_stop"
+            ]
+          },
+          "trigramascii3":{
+            "type":"custom",
+            "tokenizer":"standard",
+            "filter":[
+              "lowercase",
+              "shingle3",
+              "vn_stop",
+              "asciifolding"
+            ]
+          },
+          "trigram4":{
+            "type":"custom",
+            "tokenizer":"standard",
+            "filter":[
+              "lowercase",
+              "shingle4",
+              "vn_stop"
+            ]
+          },
+          "trigramascii4":{
+            "type":"custom",
+            "tokenizer":"standard",
+            "filter":[
+              "lowercase",
+              "shingle4",
+              "vn_stop",
+              "asciifolding"
+            ]
+          }
+        ,
+          "ascii":{
+            "type":"custom",
+            "tokenizer":"standard",
+            "filter":[
+              "lowercase",
+              "asciifolding"
+            ]
+          }
+        },
+        "filter":{
+          "shingle":{
+            "type":"shingle",
+            "min_shingle_size":2,
+            "max_shingle_size":3
+          },
+          "shingle2":{
+            "type":"shingle",
+            "min_shingle_size":2,
+            "max_shingle_size":2,
+            "output_unigrams": false
+          },
+          "shingle3":{
+            "type":"shingle",
+            "min_shingle_size":3,
+            "max_shingle_size":3,
+            "output_unigrams": false
+          },
+          "shingle4":{
+            "type":"shingle",
+            "min_shingle_size":4,
+            "max_shingle_size":4,
+            "output_unigrams": false
+          },
+          "vn_stop":{
+            "type":"stop",
+            "stopwords_path":"stopwords.txt"
+          },
+          "vn_syn":{
+            "type":"synonym",
+            "synonyms_path":"synonym.txt"
+          }
+        }
+      }
+    }
+  },
+  "mappings":{
+    "properties":{
+      "ngaytao": {
+        "type": "long"
+      },
+      "ngaysua": {
+        "type": "long"
+      },
+      "nguoitao": {
+        "type": "text"
+      },
+      "nguoisua": {
+        "type": "text"
+      },
+      "daxoa": {
+        "type": "long"
+      },
+      "magiayto": {
+        "type": "text"
+      },
+      "ishoanthanh": {
+        "type": "integer"
+      },
+      "isdaydu": {
+        "type": "integer"
+      }
+    }
+  }
+}
