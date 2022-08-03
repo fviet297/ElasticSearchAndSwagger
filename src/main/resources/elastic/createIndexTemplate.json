@@ -1,7 +1,7 @@
 {
   "settings":{
     "index":{
-      "number_of_shards":9,
+      "number_of_shards":2,
       "analysis":{
         "normalizer":{
           "keyword_lowercase":{

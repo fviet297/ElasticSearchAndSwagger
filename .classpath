@@ -1,24 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <classpath>
-	<classpathentry kind="src" output="target/classes" path="src/main/java">
-		<attributes>
-			<attribute name="optional" value="true"/>
-			<attribute name="maven.pomderived" value="true"/>
-		</attributes>
-	</classpathentry>
 	<classpathentry excluding="**" kind="src" output="target/classes" path="src/main/resources">
-		<attributes>
-			<attribute name="maven.pomderived" value="true"/>
-		</attributes>
-	</classpathentry>
-	<classpathentry kind="src" output="target/test-classes" path="src/test/java">
-		<attributes>
-			<attribute name="test" value="true"/>
-			<attribute name="optional" value="true"/>
-			<attribute name="maven.pomderived" value="true"/>
-		</attributes>
-	</classpathentry>
-	<classpathentry kind="con" path="org.eclipse.m2e.MAVEN2_CLASSPATH_CONTAINER">
 		<attributes>
 			<attribute name="maven.pomderived" value="true"/>
 		</attributes>
@@ -28,41 +10,23 @@
 			<attribute name="maven.pomderived" value="true"/>
 		</attributes>
 	</classpathentry>
-	<classpathentry kind="lib" path="C:/Users/vietdp.UNITEK/eclipse-workspace/apache-maven-3.8.5/repository/org/modelmapper/modelmapper/2.4.3/modelmapper-2.4.3.jar" sourcepath="C:/Users/vietdp.UNITEK/eclipse-workspace/apache-maven-3.8.5/repository/org/modelmapper/modelmapper/2.4.3/modelmapper-2.4.3-sources.jar">
+	<classpathentry kind="con" path="org.eclipse.m2e.MAVEN2_CLASSPATH_CONTAINER">
 		<attributes>
 			<attribute name="maven.pomderived" value="true"/>
-			<attribute name="maven.groupId" value="org.modelmapper"/>
-			<attribute name="maven.artifactId" value="modelmapper"/>
-			<attribute name="maven.version" value="2.4.3"/>
-			<attribute name="maven.scope" value="compile"/>
 		</attributes>
 	</classpathentry>
-	<classpathentry kind="lib" path="C:/Users/vietdp.UNITEK/eclipse-workspace/apache-maven-3.8.5/repository/com/vaadin/external/google/android-json/0.0.20131108.vaadin1/android-json-0.0.20131108.vaadin1.jar" sourcepath="C:/Users/vietdp.UNITEK/eclipse-workspace/apache-maven-3.8.5/repository/com/vaadin/external/google/android-json/0.0.20131108.vaadin1/android-json-0.0.20131108.vaadin1-sources.jar">
+	<classpathentry kind="lib" path="C:/Users/vietdp.UNITEK/Downloads/java-json.jar/java-json.jar"/>
+	<classpathentry kind="src" output="target/classes" path="src/main/java">
 		<attributes>
+			<attribute name="optional" value="true"/>
 			<attribute name="maven.pomderived" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="src" output="target/test-classes" path="src/test/java">
+		<attributes>
 			<attribute name="test" value="true"/>
-			<attribute name="maven.groupId" value="com.vaadin.external.google"/>
-			<attribute name="maven.artifactId" value="android-json"/>
-			<attribute name="maven.version" value="0.0.20131108.vaadin1"/>
-			<attribute name="maven.scope" value="test"/>
-		</attributes>
-	</classpathentry>
-	<classpathentry kind="lib" path="C:/Users/vietdp.UNITEK/eclipse-workspace/apache-maven-3.8.5/repository/org/springframework/boot/spring-boot-configuration-processor/2.3.1.RELEASE/spring-boot-configuration-processor-2.3.1.RELEASE.jar" sourcepath="C:/Users/vietdp.UNITEK/eclipse-workspace/apache-maven-3.8.5/repository/org/springframework/boot/spring-boot-configuration-processor/2.3.1.RELEASE/spring-boot-configuration-processor-2.3.1.RELEASE-sources.jar">
-		<attributes>
+			<attribute name="optional" value="true"/>
 			<attribute name="maven.pomderived" value="true"/>
-			<attribute name="maven.groupId" value="org.springframework.boot"/>
-			<attribute name="maven.artifactId" value="spring-boot-configuration-processor"/>
-			<attribute name="maven.version" value="2.3.1.RELEASE"/>
-			<attribute name="maven.scope" value="compile"/>
-		</attributes>
-	</classpathentry>
-	<classpathentry kind="lib" path="C:/Users/vietdp.UNITEK/eclipse-workspace/apache-maven-3.8.5/repository/org/springframework/spring-jdbc/5.2.7.RELEASE/spring-jdbc-5.2.7.RELEASE.jar" sourcepath="C:/Users/vietdp.UNITEK/eclipse-workspace/apache-maven-3.8.5/repository/org/springframework/spring-jdbc/5.2.7.RELEASE/spring-jdbc-5.2.7.RELEASE-sources.jar">
-		<attributes>
-			<attribute name="maven.pomderived" value="true"/>
-			<attribute name="maven.groupId" value="org.springframework"/>
-			<attribute name="maven.artifactId" value="spring-jdbc"/>
-			<attribute name="maven.version" value="5.2.7.RELEASE"/>
-			<attribute name="maven.scope" value="compile"/>
 		</attributes>
 	</classpathentry>
 	<classpathentry kind="output" path="target/classes"/>

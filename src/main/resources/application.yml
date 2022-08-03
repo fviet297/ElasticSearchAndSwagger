@@ -1,0 +1,27 @@
+spring:
+  datasource:
+    password: 201118
+    url: jdbc:postgresql://localhost:5432/vietdp
+    username: postgres
+    driver-class-name: org.postgresql.Driver
+  jpa:
+    hibernate:
+      ddl-auto: update
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.PostgreSQL81Dialect
+        format_sql: true
+    show-sql: true
+  mvc:
+    pathmatch:
+      matching-strategy: 'ant-path-matcher'
+  jackson:
+    serialization:
+      fail-on-empty-beans: false
+server:
+  port: 8080
+swagger2:
+  base-package: vietdp.elasticsearch.controller
+ ## auth-service-url: http://192.168.5.227:4000/uaa
+  title: Test API
+  description: TESTING
